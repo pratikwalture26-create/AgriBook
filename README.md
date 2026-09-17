@@ -1,5 +1,4 @@
-# <img src=""C:\Users\Lenovo\Downloads\AgriBook\flutter_app\Agri image\Agri.png"" alt="AgriBook Logo" width="50" align="center"> AgriBook
-
+# <img src="Agri.png" alt="AgriBook Logo" width="50" align="center"> AgriBook
 AgriBook is a smart digital solution designed to streamline the agricultural supply chain. It connects farmers directly with procurement centers to eliminate long wait times, manage queues efficiently, and bring transparency to the entire crop selling process.
 
 ---
