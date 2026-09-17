@@ -1,6 +1,0 @@
-{
-  "name": "AgriBook",
-  "description": "Smart Slot & Queue Management for Agricultural Procurement - SIH 26032",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
