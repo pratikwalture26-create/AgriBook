@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>AgriBook - Smart Slot &amp; Queue Management for Agricultural Procurement - SIH 26032</title>
+    
+    <!-- Core Meta -->
+    <meta name="description" content="Smart Slot &amp; Queue Management for Agricultural Procurement - SIH 26032. Demand forecasting, AI slot allocation, live Mandi token queue, and MSP settlements." />
+    <meta name="keywords" content="AgriBook, SIH 26032, Mandi procurement, Smart slot allocation, live queue management, MSP payments, Indian agriculture, farmers" />
+    <meta name="author" content="AgriBook Team - SIH 26032" />
+
+    <!-- OpenGraph Social Sharing (Slack, Discord, LinkedIn, WhatsApp) -->
+    <meta property="og:site_name" content="AgriBook" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AgriBook - Smart Slot &amp; Queue Management for Agricultural Procurement" />
+    <meta property="og:description" content="AI demand prediction, automated slot allocation, real-time Mandi queue tokens, and direct MSP settlement tracking (SIH 26032)." />
+    <meta property="og:image" content="/agribook-logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="AgriBook Official Logo" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AgriBook - Smart Slot &amp; Queue Management for Agricultural Procurement" />
+    <meta name="twitter:description" content="Smart agricultural procurement slot and queue management platform for SIH 26032, Ministry of Consumer Affairs, Food &amp; Public Distribution." />
+    <meta name="twitter:image" content="/agribook-logo.png" />
+    <meta name="twitter:image:alt" content="AgriBook Official Logo" />
+
+    <!-- PWA & Mobile Web Capabilities -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#064e3b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AgriBook" />
+    <link rel="icon" type="image/png" href="/agribook-logo.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://agribook.gov.in/#webapp",
+          "name": "AgriBook",
+          "url": "/",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All",
+          "description": "Smart Slot & Queue Management for Agricultural Procurement - SIH 26032. Ministry of Consumer Affairs, Food & Public Distribution.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+          },
+          "featureList": [
+            "AI-powered Mandi demand forecasting (XGBoost)",
+            "Dynamic slot allocation and anti-crowding scheduling",
+            "Real-time yard queue tracking with estimated gate entry times",
+            "SMS & IVR helpline fallback for basic feature phones",
+            "Direct MSP payment tracking via PFMS / DBT"
+          ]
+        },
+        {
+          "@type": "GovernmentService",
+          "@id": "https://agribook.gov.in/#service",
+          "name": "AgriBook Mandi Procurement Slot Allocation",
+          "serviceType": "Agricultural Procurement Queue System",
+          "provider": {
+            "@type": "GovernmentOrganization",
+            "name": "Ministry of Consumer Affairs, Food & Public Distribution"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Service Worker Registration for PWA Offline Resilience -->
+    <script>
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.debug('[AgriBook PWA] Service worker registration info:', err);
+          });
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-200 selection:text-emerald-950 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
